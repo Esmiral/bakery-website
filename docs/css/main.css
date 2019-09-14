@@ -437,11 +437,13 @@ template {
 .bg-header {
   background-color: #9e9c93;
   width: 100%;
+  -webkit-box-shadow: 0px 7px 26px 3px #918891;
+  box-shadow: 0px 7px 26px 3px #918891;
   background-image: url("../images/bg/bg-header.jpg");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: cover;
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px 1px #918891;
 }
 .line-curve-dashed {
   margin-bottom: 54px;
@@ -488,20 +490,6 @@ template {
 }
 .header-bottom__button-bread .header-bottom-img img {
   margin-top: 18px;
-}
-.bg-tasty {
-  padding: 20px 0px;
-  background-image: url("../images/bg/bg-tasty.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.bg-breakfast {
-  padding: 20px 0px;
-  background-image: url("../images/bg/bg-breakfast.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 @media (min-width: 1600px) {
   .section-nav {
@@ -710,6 +698,19 @@ template {
   background-size: 250px 250px;
   z-index: 1;
 }
+.photo-art-rectangle {
+  position: relative;
+}
+.rectangle {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 234px;
+  height: 228px;
+  border: 5px solid #fff;
+  color: transparent;
+  z-index: 5;
+}
 .div {
   width: 20px;
   height: 20px;
@@ -780,40 +781,105 @@ template {
   width: 117px;
   height: 117px;
 }
-.chef-cook__part-2 img:after,
-.chef-cook__part-2 before {
-  content: ",,";
+.chef-cook__part-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Times New Roman";
+  font-size: 60px;
+  letter-spacing: 1.5px;
+  color: #b5b5b1;
+}
+.chef-cook__part-2 .quote-left {
+  margin-right: 10px;
+}
+.chef-cook__part-2 .quote-right {
+  margin-left: 10px;
+}
+.add-upper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 15;
+}
+.add-upper__slogan {
+  color: #c9b176;
+  font-size: 30px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.section-tasty {
+  position: relative;
+  width: 1600px;
+  height: 760px;
+  background-image: url("../images/bg/bg-tasty.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
 }
 .widget-bg {
-  width: 100%;
-  background-image: url("../images/section-tasty/widget-bg.jpg");
+  width: 1100px;
+  background-image: url("../images/section-tasty/food-widget.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-.widget-img {
-  width: 50%;
-  height: 100%;
+.widget-text-bg {
+  width: 60%;
+  float: right;
+  position: relative;
+  padding-bottom: 40px;
+  background-color: #fff;
+  background-image: url("../images/section-tasty/windmill.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+.widget-text-bg .circle {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #fff;
+  position: absolute;
+  left: -25px;
+  top: 48%;
 }
 .widget-text {
-  width: 50%;
-  float: right;
-  background-image: url("../images/section-tasty/text-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding-left: 63px;
-  padding-right: 85px;
+  margin-left: 60px;
+  margin-right: 80px;
+  padding-top: 80px;
 }
-.widget-text .widget-text__title {
+.widget-text__title {
+  margin: 0;
+  padding: 0;
   font-size: 48px;
   letter-spacing: 1.2px;
   font-weight: 700;
   color: #56534c;
-  padding-top: 85px;
   margin-bottom: 20px;
 }
-.widget-text .widget-text__slogan {
+.widget-text__slogan {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
@@ -821,14 +887,316 @@ template {
   margin-bottom: 67px;
   letter-spacing: 1.6px;
 }
-.widget-text .widget-text__content {
-  font-family: "Meriad Pro";
+.widget-text__content {
+  font-family: 'Proxima Nova Rg', serif;
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 100px;
 }
+.widget-text__content p {
+  padding-right: 146px;
+}
 .img-circle-block {
+  margin-right: 60px;
+  margin-left: 60px;
+  padding-bottom: 40px;
   display: inline-block;
-  margin-right: 30px;
+}
+.img-circle-block img {
+  margin-right: 28px;
+}
+.img-circle-block img:first-child {
+  margin-right: 10px;
+}
+.img-circle-block img:nth-child(4) {
+  margin-right: 10px;
+}
+.img-circle-block img:last-child {
+  margin-right: 0;
+}
+.ready-tips {
+  width: 200px;
+  height: 200px;
+  background-image: url("../images/section-tasty/bg-ready.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  position: absolute;
+  top: -100px;
+  right: -50px;
+  -webkit-box-shadow: 0 1px 10px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1px 10px 10px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+.ready-tips .line-1 {
+  font-size: 18px;
+  letter-spacing: 1.8px;
+  font-weight: bold;
+  color: #a47d5e;
+  text-transform: uppercase;
+  padding-top: 32px;
+  margin-bottom: 35px;
+}
+.ready-tips .line-2 {
+  color: #dfc691;
+  font-size: 86px;
+  letter-spacing: 1.8px;
+  font-weight: bold;
+  margin-bottom: 21px;
+}
+.ready-tips .line-3 {
+  color: #979285;
+  font-size: 14px;
+}
+.section-breakfast {
+  width: 1600px;
+  height: 760px;
+  padding-top: 85px;
+  background-image: url("../images/bg/bg-breakfast.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+}
+.menu-left {
+  line-height: 30px;
+}
+.menu-left h2 {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.menu-left .alegreya {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  margin: 0;
+  padding: 0;
+  color: #7e6d68;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+.menu-left h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.menu-left .proxima-nova {
+  font-family: 'Proxima Nova Rg';
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  color: #c2beba;
+  margin-bottom: 25px;
+}
+.menu-left .alegreya-price {
+  font-size: 36px;
+  letter-spacing: 1.8px;
+  font-weight: 700;
+  color: #c3ae80;
+  margin-bottom: 50px;
+}
+.menu-left:last-child {
+  margin-bottom: 0;
+}
+.menu-right {
+  padding-top: 15px;
+  text-align: center;
+  height: 610px;
+  width: 445px;
+  line-height: 30px;
+  -webkit-box-shadow: 0px 0px 15px -1px #918891;
+  box-shadow: 0px 0px 15px -1px #918891;
+  background-image: url("../images/section-breakfast/bg_menu-right.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+}
+.menu-right .menu-right__head {
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  font-weight: 700;
+  color: #56534c;
   margin-bottom: 40px;
+  margin-left: 105px;
+  margin-right: 105px;
+}
+.menu-right .line {
+  border-bottom: 1px solid rgba(86, 83, 76, 0.5);
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-bottom: 40px;
+}
+.menu-right .menu-right__title {
+  font-size: 44px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #56534c;
+  margin-bottom: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.menu-right .menu-right__description {
+  font-family: 'Proxima Nova Rg';
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  color: #56534c;
+  margin-bottom: 50px;
+  margin-left: 55px;
+  margin-right: 55px;
+}
+.menu-right .button {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  padding: 20px 67px;
+  border: 1px solid #9e9c93;
+  color: #a47d5e;
+  background-color: #fff;
+  text-decoration: none;
+}
+.menu-right .button:hover {
+  background-color: rgba(158, 156, 147, 0.3);
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+}
+.section-sandwitch {
+  width: 1600px;
+  height: 960px;
+  margin: 0;
+  background-color: #f3f1e9;
+  background-image: url("../images/section-tasty/windmill.png");
+  background-repeat: no-repeat;
+  background-position: top 0 left 50%;
+  background-size: 165px 130px;
+  z-index: 1;
+}
+.section-sandwitch__title {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: #56534c;
+  text-align: center;
+}
+.section-sandwitch__slogan {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  text-align: center;
+  color: #a47d5e;
+}
+.section-sandwitch__description {
+  text-align: center;
+}
+.section-sandwitch__description img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 15px -1px #918891;
+  box-shadow: 0px 0px 15px -1px #918891;
+}
+.section-sandwitch__description__title {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  color: #a47d5e;
+}
+.section-sandwitch__description__text {
+  font-family: 'Proxima Nova Rg';
+  color: #56534c;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+}
+.section-sandwitch-cooking-time {
+  width: 850px;
+  height: 570px;
+  -webkit-box-shadow: 0px 0px 15px -1px #918891;
+  box-shadow: 0px 0px 15px -1px #918891;
+  background-image: url("../images/section-sandwitch/img-bg-sandwitch.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+}
+.section-sandwitch-cooking-time .section-sandwitch-button {
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  background-color: #fff;
+  text-transform: uppercase;
+  color: #dfc691;
+  text-decoration: none;
+  border: 1px dashed #dfc691;
+  padding: 20px 30px;
+  position: absolute;
+  bottom: -10px;
+  left: -20px;
+}
+.section-sandwitch-cooking-time .section-sandwitch-button:hover {
+  background-color: #e5d1a7;
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+  cursor: pointer;
+  color: #dc8350;
+}
+.timing-block {
+  float: right;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 15px -1px #918891;
+  box-shadow: 0px 0px 15px -1px #918891;
+}
+.prep,
+.cook,
+.readyin {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: url("../images/section-tasty/bg-ready.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-image: transparent;
+}
+.prep .line-1,
+.cook .line-1,
+.readyin .line-1 {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  color: #a47d5e;
+  text-transform: uppercase;
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
+.prep .line-2,
+.cook .line-2,
+.readyin .line-2 {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  color: #56534c;
+}
+.prep .line-3,
+.cook .line-3,
+.readyin .line-3 {
+  font-size: 18px;
+  letter-spacing: 1.8px;
+  color: #979285;
+  margin-bottom: 20px;
+}
+.readyin .line-2 {
+  font-size: 92px;
+  letter-spacing: 9.2px;
+  color: #dfc691;
+  margin-bottom: 0;
+}
+.prep,
+.cook {
+  border-bottom: 1px solid #dc8350;
 }

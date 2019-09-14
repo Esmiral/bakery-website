@@ -14,8 +14,23 @@ text-align: center;
 	     -o-background-size: 250px 250px;
 	        background-size: 250px 250px;
 	        z-index: 1;
-}
 
+
+}
+.photo-art-rectangle {
+	position: relative;
+	
+}
+.rectangle {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 234px;
+	height: 228px;
+	border: 5px solid #fff;
+	color: transparent;
+	z-index: 5;
+}
 
 .div {
 	width: 20px;
@@ -85,8 +100,46 @@ text-align: center;
 
 }
 .chef-cook__part-2 {
-	img:after,before {
-		content: ",,";
-	}
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-family: "Times New Roman";
+	font-size: 60px;
+	letter-spacing: 1.5px;
+	color: #b5b5b1;
 
+	.quote-left {
+		margin-right: 10px;
+
+	}
+	.quote-right {
+		margin-left: 10px;
+	}
+}
+
+.add-upper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+		-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	z-index: 15;
+}
+.add-upper__slogan {
+	color: #c9b176;
+	font-size: 30px;
+	text-transform: uppercase;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	
 }

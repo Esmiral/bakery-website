@@ -1,59 +1,151 @@
 .section-tasty {
-
+	position: relative;
+	width: 1600px;
+	height: 760px;
+	background-image: url("../images/bg/bg-tasty.jpg");
+	background-repeat: no-repeat;
+	background-position: left center;
+	  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
 }
 .widget-bg {
-	width: 100%;
-	background-image: url("../images/section-tasty/widget-bg.jpg");
+	// width: 970px;
+	width: 1100px;
+	background-image: url("../images/section-tasty/food-widget.png");
 	background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
        -o-background-size: cover;
           background-size: cover;
- 
+	 // box-shadow: 0 1px 25px 35px rgba(0, 0, 0, 0.5);
 
+ 	position: absolute;
+ 	top: 50%;
+ 	left:50%;
+ 	-webkit-transform: translate(-50%, -50%);
+ 	-moz-transform: translate(-50%, -50%);
+ 	-ms-transform: translate(-50%, -50%);
+ 	-o-transform: translate(-50%, -50%);
+ 	transform: translate(-50%, -50%);
+ 	
+	
 }
-.widget-img {
-	width: 50%;
-	height: 100%;
+
+.widget-text-bg {
+  width: 60%;
+  float: right;
+	position: relative;
+	padding-bottom: 40px;
+	background-color: #fff;
+	background-image: url("../images/section-tasty/windmill.png");
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	
+  // box-shadow: 0 1px 25px 35px rgba(0, 0, 0, 0.5);
+
+	.circle {
+		content: "";
+		width: 50px;
+		height: 50px;
+		border-radius: 25px;
+		background-color: #fff;
+		position: absolute;
+		left: -25px;
+		top: 48%;
+	}
+
 }
 
 .widget-text {
-  width: 50%;
-  float: right;
-  background-image: url("../images/section-tasty/text-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
-          padding-left: 63px;
-          padding-right: 85px;
-
+	margin-left: 60px;
+  margin-right: 80px;
+  padding-top: 80px;
+}
 	.widget-text__title {
-	 font-size: 48px;
-	 letter-spacing: 1.2px;
-	 font-weight: 700;
-	 color: #56534c;
-	 padding-top: 85px;
-	 margin-bottom: 20px;
+		margin: 0;
+		padding: 0;
+		font-size: 48px;
+		letter-spacing: 1.2px;
+		font-weight: 700;
+		color: #56534c;
+		margin-bottom: 20px;
 	}
 	.widget-text__slogan {
-	 text-transform: uppercase;
-	 font-size: 14px;
-	 font-weight: 700;
-	 color: #a47d5e;
-	 margin-bottom: 67px;
-	 letter-spacing: 1.6px;
+		 text-transform: uppercase;
+		 font-size: 14px;
+		 font-weight: 700;
+		 color: #a47d5e;
+		 margin-bottom: 67px;
+		 letter-spacing: 1.6px;
 	}
 	.widget-text__content {
-	 font-family: "Meriad Pro";
-	 font-size: 14px;
-	 line-height: 24px;
-	 margin-bottom: 100px;
+		 font-family: 'Proxima Nova Rg', serif;
+		 font-size: 14px;
+		 line-height: 24px;
+		 margin-bottom: 100px;
+
+	 p{
+	 	padding-right: 146px;
+	 }
 	}
-}
+
 .img-circle-block {
- display: inline-block;
- margin-right: 30px;
- margin-bottom: 40px;
+	margin-right: 60px;
+	margin-left: 60px;
+	padding-bottom: 40px;
+	display: inline-block;
+	
+	img {
+		margin-right: 28px;
+		&:first-child {
+			margin-right: 10px;
+		}
+		&:nth-child(4) {
+			margin-right: 10px;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	
 }
+.ready-tips {
+	width: 200px;
+	height: 200px;
+	background-image: url("../images/section-tasty/bg-ready.png");
+	background-repeat: no-repeat;
+	background-position: top left;
+		  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+
+  position: absolute;
+  top: -100px;
+  right: -50px;
+  box-shadow: 0 1px 10px 10px rgba(0, 0, 0, 0.4);
+
+  text-align: center;
+
+  .line-1 {
+  	font-size: 18px;
+  	letter-spacing: 1.8px;
+  	font-weight: bold;
+ 		color: #a47d5e;
+ 		text-transform: uppercase;
+ 		padding-top: 32px;
+ 		margin-bottom: 35px;
+  }
+  .line-2 {
+  	color: #dfc691;
+  	font-size: 86px;
+  	letter-spacing: 1.8px;
+  	font-weight: bold;
+  	margin-bottom: 21px;
+  }
+ 	.line-3 {
+ 		color: #979285;
+ 		font-size: 14px;
+ 	}
+}
+  
