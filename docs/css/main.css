@@ -491,6 +491,79 @@ template {
 .header-bottom__button-bread .header-bottom-img img {
   margin-top: 18px;
 }
+.footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  padding-bottom: 70px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer-logo {
+  width: 146px;
+  height: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-image: url("../images/footer/gustoso-footer.png");
+}
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  letter-spacing: 4.2px;
+  border-top: 1px solid #c2beba;
+  border-bottom: 1px solid #c2beba;
+}
+.footer-nav li {
+  margin: 0;
+  padding: 0;
+  margin-right: 35px;
+  display: inline-block;
+}
+.footer-nav li:last-child {
+  margin-right: 0;
+}
+.footer-nav li a {
+  text-decoration: none;
+  color: #56534c;
+  cursor: pointer;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+.footer-nav li a:hover {
+  color: rgba(255, 180, 0, 0.7);
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+.footer-nav-left {
+  margin-right: 40px;
+  margin-left: 120px;
+}
+.footer-nav-right {
+  margin-left: 40px;
+  margin-right: 120px;
+}
 @media (min-width: 1600px) {
   .section-nav {
     height: 100%;
