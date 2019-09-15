@@ -805,18 +805,6 @@ template {
   padding-top: 105px;
   padding-bottom: 100px;
 }
-@media (min-width: 768px) {
-  .section-art {
-    padding-top: 60px;
-    padding-bottom: 52px;
-  }
-}
-@media (min-width: 1600px) {
-  .section-art {
-    padding-bottom: 120px;
-    padding-top: 105px;
-  }
-}
 .photo-art {
   width: 100%;
   background-image: url("../../images/section-art/Vektor-Smartobjekt-right.png");
