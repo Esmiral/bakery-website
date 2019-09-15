@@ -1,30 +1,39 @@
 .section-nav {
+	background-color: rgba(86, 83, 76, 0.53);
+	height: 100%;
+
+  @media (min-width: 768px) {
+  	margin-bottom: 160px;
+  }
 
 	@media (min-width: 1600px) {
-		height: 100%;
-		background-color: rgba(86, 83, 76, 0.53);
 		margin-bottom: 189px;
 	}
 }
 .navigation {
-	
-		
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		color: #fff;
-		
+		padding-top: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
 
   @media (min-width: 768px) {
   	flex-direction: row;
+  	padding-top: 14px;
+		padding-left: 14px;
+		padding-right: 14px;
   }
-
+	@media (min-width: 1200px) {
+		padding-top: 14px;
+		padding-left: 90px;
+		padding-right: 90px;
+	}
 	@media (min-width: 1600px) {
     flex-direction: row;
 		padding-top: 16px;
-		// margin-bottom: 220px;	
-		// margin-left: 143px;
 		padding-left: 170px;
 		padding-right: 170px;
 		margin: 0;
@@ -34,37 +43,36 @@
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-		margin-right: 15px;
-		
+		margin-right: 12px;
 		
 		@media (min-width: 768px) {
-			margin-right: 50px;
-			
+			margin-right: 20px;
+		}
+		@media (min-width: 1200px) {
+			margin-right: 95px;
+		}
+		@media (min-width: 1600px) {
+		  margin-right: 130px;
+			margin-top: -10px;
 		}
 
-		@media (min-width: 1600px) {
-		  margin-right: 147px;
-			margin-top: -10px;
-     
-		}
 		li {
 			margin: 0;
 			padding: 0;
 			display: inline-block;
 			margin-right: 3px;
 			text-align: center;
+			font-size: 12px;
+			font-weight: 400;
+			letter-spacing: 1.2px;
 
 			a {		
 				text-decoration: none;
 				text-transform: uppercase;
 				background-color: transparent;
-				font-size: 12px;
-				font-weight: 400;
-				letter-spacing: 1.2px;
 				color: #fff;
 				cursor: pointer;
 				padding: 0;
-	
 
 				&:hover {
 					color: #ccb400;
@@ -75,10 +83,17 @@
 					transition: 0.2s ease-in;;
 				}
 			}
-
+			@media (min-width: 768px) {
+				font-size: 14px;
+				letter-spacing: 1.8px;
+				margin-right: 7px;
+			}
+			@media (min-width: 1200px) {
+				letter-spacing: 2.8px;
+				margin-right: 20px;
+			}
 			@media (min-width: 1600px) {
 				margin-right: 32px;
-				font-size: 14px;
 				letter-spacing: 4.2px;
 				line-height: 24px;
 			}
@@ -93,8 +108,8 @@
 .logo {
 	width: 142px;
 	height: 48px;
-
-  // content: "";
+	margin: 0;
+	padding: 0;
 
 	background-image: url("../images/header-img/gustavo.png");
 	background-repeat: no-repeat;
@@ -106,20 +121,16 @@
 	@media (min-width: 768px) {
 	 width: 170px;
 	 height: 44px;
-	
-	 margin-right: 25px;
-	
+	 margin-right: 12px;
 	}
-
+	 @media (min-width: 1200px) {
+	 	margin-right: 25px;
+	 }
 	@media (min-width: 1600px) {
 		width: 143px;
 	  height: 48px;
-	  margin: 0;
-	  padding: 0;
 		margin-right: 100px;
-	 
 	}
-	
 }
 .social {
 	display: inline-block;
@@ -142,7 +153,17 @@
 	}
 
 	.fa {
-		margin-right: 25px;
+		margin-right: 4px;
+
+		@media (min-width: 768px) {
+			margin-right: 6px;
+		}
+		@media (min-width: 1200px) {
+			margin-right: 22px;
+		}
+		@media (min-width: 1600px) {
+			margin-right: 25px;
+		}
 
 		&:last-child {
 			margin-right: 0;
