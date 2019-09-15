@@ -1,44 +1,50 @@
 .section-art {
-background-color: #fffffe;
-padding-bottom: 120px;
-padding-top: 105px;
-text-align: center;
+	background-color: #fefefd;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 25px;
+
+	@media (min-width: 768px) {
+		padding-top: 60px;
+		padding-bottom: 52px;
+	}
+
+	@media (min-width: 1600px) {
+		padding-bottom: 120px;
+		padding-top: 105px;
+	}
 }
 .photo-art {
-	width: 297px;
-	height: 250px;
+	width: 100%;
   background-image: url("../../images/section-art/Vektor-Smartobjekt-right.png");
   background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: 250px 250px;
 	     -o-background-size: 250px 250px;
 	        background-size: 250px 250px;
-	        z-index: 1;
-
 
 }
 .photo-art-rectangle {
 	position: relative;
-	
 }
 .rectangle {
 	position: absolute;
 	top: 5%;
 	left: 5%;
-	width: 234px;
-	height: 228px;
+	width: 90%;
+	height: 90%;
 	border: 5px solid #fff;
 	color: transparent;
-	z-index: 5;
 }
 
-.div {
+.div-crutch {
 	width: 20px;
 	height: 20px;
 }
 
 .section-art__title {
 	font-size: 48px;
+	letter-spacing: 1.2px;
   font-family: "Alegreya";
   color: rgb(86, 83, 76);
   font-weight: bold;
@@ -48,17 +54,18 @@ text-align: center;
 
 .section-art_slogan {
 	font-size: 14px;
+	letter-spacing: 1.4px;
 	font-family: "Alegreya";
-	font-weight: 400;
-	margin-bottom: 70px;
-	color: #aa8668;
+	font-weight: 700;
+	margin-bottom: 65px;
+	color: #a47d5e;
 	text-transform: uppercase;
 }
 .section-art__text {
 	font-size: 14px;
-	font-family: Arial;
+	font-family: 'Proxima Nova Rg';
 	font-weight: 400;
-	line-height:24px;
+	line-height: 24px;
 	color: #56534c;
 	margin-bottom: 45px;
 }
@@ -72,21 +79,28 @@ text-align: center;
 .chef-cook {
 	display: flex;
 	flex-direction: column;
-	
 	margin-bottom: 50px;
 
 	p {
+		margin: 0;
+		padding: 0;
 		border-top: 1px solid #9e9c93;
 		border-bottom: 1px solid #9e9c93;
-		padding-top: 25px;
-		padding-bottom: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 25px;
+		padding-right: 25px;
 		font-size: 24px;
 		font-weight: 400;
+		letter-spacing: 0.6px;
+		color: #56534c;
+
 	}
 	.chef-cook__part-1 {
 		margin-bottom: 40px;
 		display: flex;
 		justify-content: center;
+		align-items: center;
 
 	}
 	.chef-photo {
@@ -94,8 +108,8 @@ text-align: center;
 		margin-right: 22px;
 		border-radius: 56px; 
 		background-color: rgb(158, 156, 147);
-		width: 117px;
-	  height: 117px;
+		width: 112px;
+	  height: 112px;
 	}
 
 }
@@ -110,11 +124,11 @@ text-align: center;
 	color: #b5b5b1;
 
 	.quote-left {
-		margin-right: 10px;
-
+		margin-right: 64px;
+	  transform: rotate(180deg);
 	}
 	.quote-right {
-		margin-left: 10px;
+		margin-left: 64px;
 	}
 }
 

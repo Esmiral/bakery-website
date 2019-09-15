@@ -12,11 +12,6 @@ body {
   /* 10px * 1.6 = 16px */
   font-family: 'Alegreya', serif;
 }
-p {
-  font-size: 14px;
-  line-height: 24px;
-  color: #777;
-}
 /*
  * Box-sizing-model
  */
@@ -805,19 +800,29 @@ template {
   transition: 0.3s ease-in;
 }
 .section-art {
-  background-color: #fffffe;
-  padding-bottom: 120px;
-  padding-top: 105px;
+  background-color: #fefefd;
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .section-art {
+    padding-top: 60px;
+    padding-bottom: 52px;
+  }
+}
+@media (min-width: 1600px) {
+  .section-art {
+    padding-bottom: 120px;
+    padding-top: 105px;
+  }
 }
 .photo-art {
-  width: 297px;
-  height: 250px;
+  width: 100%;
   background-image: url("../../images/section-art/Vektor-Smartobjekt-right.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 250px 250px;
-  z-index: 1;
 }
 .photo-art-rectangle {
   position: relative;
@@ -826,18 +831,18 @@ template {
   position: absolute;
   top: 5%;
   left: 5%;
-  width: 234px;
-  height: 228px;
+  width: 90%;
+  height: 90%;
   border: 5px solid #fff;
   color: transparent;
-  z-index: 5;
 }
-.div {
+.div-crutch {
   width: 20px;
   height: 20px;
 }
 .section-art__title {
   font-size: 48px;
+  letter-spacing: 1.2px;
   font-family: "Alegreya";
   color: #56534c;
   font-weight: bold;
@@ -846,15 +851,16 @@ template {
 }
 .section-art_slogan {
   font-size: 14px;
+  letter-spacing: 1.4px;
   font-family: "Alegreya";
-  font-weight: 400;
-  margin-bottom: 70px;
-  color: #aa8668;
+  font-weight: 700;
+  margin-bottom: 65px;
+  color: #a47d5e;
   text-transform: uppercase;
 }
 .section-art__text {
   font-size: 14px;
-  font-family: Arial;
+  font-family: 'Proxima Nova Rg';
   font-weight: 400;
   line-height: 24px;
   color: #56534c;
@@ -878,12 +884,18 @@ template {
   margin-bottom: 50px;
 }
 .chef-cook p {
+  margin: 0;
+  padding: 0;
   border-top: 1px solid #9e9c93;
   border-bottom: 1px solid #9e9c93;
-  padding-top: 25px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
   font-size: 24px;
   font-weight: 400;
+  letter-spacing: 0.6px;
+  color: #56534c;
 }
 .chef-cook .chef-cook__part-1 {
   margin-bottom: 40px;
@@ -893,14 +905,17 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .chef-cook .chef-photo {
   margin-left: 22px;
   margin-right: 22px;
   border-radius: 56px;
   background-color: #9e9c93;
-  width: 117px;
-  height: 117px;
+  width: 112px;
+  height: 112px;
 }
 .chef-cook__part-2 {
   display: -webkit-box;
@@ -922,10 +937,12 @@ template {
   color: #b5b5b1;
 }
 .chef-cook__part-2 .quote-left {
-  margin-right: 10px;
+  margin-right: 64px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .chef-cook__part-2 .quote-right {
-  margin-left: 10px;
+  margin-left: 64px;
 }
 .add-upper {
   position: absolute;
