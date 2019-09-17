@@ -886,12 +886,16 @@ template {
   border-bottom: 1px solid #9e9c93;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 25px;
-  padding-right: 25px;
   font-size: 24px;
   font-weight: 400;
   letter-spacing: 0.6px;
   color: #56534c;
+}
+@media (min-width: 480px) {
+  .chef-cook p {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 .chef-cook .chef-cook__part-1 {
   margin-bottom: 40px;
@@ -981,12 +985,12 @@ template {
 }
 @media (min-width: 768px) {
   .widget-bg {
-    width: 400px;
+    width: 600px;
   }
 }
 @media (min-width: 992px) {
   .widget-bg {
-    width: 600px;
+    width: 770px;
   }
 }
 @media (min-width: 1600px) {
@@ -998,11 +1002,15 @@ template {
   width: 51%;
   float: right;
   position: relative;
-  padding-bottom: 20px;
   background-color: #fff;
   background-image: url("../images/section-tasty/windmill.png");
   background-position: bottom right;
   background-repeat: no-repeat;
+}
+@media (min-width: 1600px) {
+  .widget-text-bg {
+    padding-bottom: 20px;
+  }
 }
 .widget-text-bg .circle {
   content: "";
@@ -1015,87 +1023,181 @@ template {
   top: 48%;
 }
 .widget-text {
-  margin-left: 60px;
-  margin-right: 80px;
-  padding-top: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 30px;
+}
+@media (min-width: 1600px) {
+  .widget-text {
+    margin-left: 60px;
+    margin-right: 80px;
+    padding-top: 60px;
+  }
 }
 .widget-text__title {
   margin: 0;
   padding: 0;
-  font-size: 48px;
-  letter-spacing: 1.2px;
+  font-size: 20px;
+  letter-spacing: 0.8px;
   font-weight: 700;
   color: #56534c;
   margin-bottom: 10px;
 }
+@media (min-width: 768px) {
+  .widget-text__title {
+    font-size: 24px;
+    letter-spacing: 1.2px;
+  }
+}
+@media (min-width: 1600px) {
+  .widget-text__title {
+    font-size: 48px;
+    letter-spacing: 1.2px;
+  }
+}
 .widget-text__slogan {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   color: #a47d5e;
-  margin-bottom: 55px;
-  letter-spacing: 1.4px;
+  margin-bottom: 25px;
+  letter-spacing: 1.0px;
+}
+@media (min-width: 1600px) {
+  .widget-text__slogan {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    margin-bottom: 55px;
+  }
 }
 .widget-text__content {
   font-family: 'Proxima Nova Rg', serif;
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 70px;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 30px;
+}
+@media (min-width: 1600px) {
+  .widget-text__content {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 70px;
+  }
 }
 .widget-text__content p {
-  padding-right: 146px;
+  padding-right: 70px;
+}
+@media (min-width: 1600px) {
+  .widget-text__content p {
+    padding-right: 146px;
+  }
 }
 .img-circle-block {
-  margin-right: 60px;
-  margin-left: 60px;
   display: inline-block;
+  margin-right: 7px;
+  margin-left: 7px;
+}
+@media (min-width: 1600px) {
+  .img-circle-block {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
 }
 .img-circle-block img {
-  margin-right: 28px;
+  max-width: 40px;
 }
 .img-circle-block img:first-child {
-  margin-right: 10px;
+  margin-right: 8px;
+  max-width: 20px;
 }
 .img-circle-block img:nth-child(4) {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 .img-circle-block img:last-child {
   margin-right: 0;
+  max-width: 20px;
+}
+@media (min-width: 1600px) {
+  .img-circle-block img {
+    max-width: 100%;
+    margin-right: 28px;
+  }
+  .img-circle-block img:first-child {
+    margin-right: 10px;
+  }
+  .img-circle-block img:nth-child(4) {
+    margin-right: 10px;
+  }
+  .img-circle-block img:last-child {
+    margin-right: 0;
+  }
 }
 .ready-tips {
-  width: 200px;
-  height: 200px;
+  text-align: center;
+  -webkit-box-shadow: 0 1px 12px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 12px 5px rgba(0, 0, 0, 0.3);
+  width: 120px;
+  height: 120px;
   background-image: url("../images/section-tasty/bg-ready.png");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: cover;
   position: absolute;
-  top: -37px;
-  right: -100px;
-  -webkit-box-shadow: 0 1px 12px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 1px 12px 5px rgba(0, 0, 0, 0.3);
-  line-height: 30px;
-  text-align: center;
+  top: -17px;
+  right: -60px;
+  line-height: 15px;
+}
+.ready-tips p {
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 1600px) {
+  .ready-tips {
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/section-tasty/bg-ready.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    position: absolute;
+    top: -37px;
+    right: -100px;
+    line-height: 30px;
+  }
 }
 .ready-tips .line-1 {
-  font-size: 18px;
-  letter-spacing: 1.8px;
-  font-weight: bold;
   color: #a47d5e;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  padding-top: 15px;
-  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+  padding-top: 8px;
+  margin-bottom: 20px;
+}
+@media (min-width: 1600px) {
+  .ready-tips .line-1 {
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    padding-top: 15px;
+    margin-bottom: 40px;
+  }
 }
 .ready-tips .line-2 {
   color: #dfc691;
-  font-size: 86px;
-  letter-spacing: 1.8px;
+  font-size: 56px;
+  letter-spacing: 1.6px;
   font-weight: bold;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+}
+@media (min-width: 1600px) {
+  .ready-tips .line-2 {
+    font-size: 86px;
+    letter-spacing: 1.8px;
+    margin-bottom: 20px;
+  }
 }
 .ready-tips .line-3 {
   color: #979285;
