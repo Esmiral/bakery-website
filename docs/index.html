@@ -13,12 +13,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
 	<!-- Syles -->
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.css">
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="fonts/alegreya/stylesheet.css">
 	<link rel="stylesheet" href="fonts/playfairdisplay/stylesheet.css">
 	<link rel="stylesheet" href="fonts/proxima-nova/stylesheet.css">
+	<link rel="stylesheet" href="fonts/scriptina/stylesheet.css">
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- FavIcons -->
@@ -29,319 +29,323 @@
 </head>
 <body>
 <!-- Header section -->
-<header class=" bg-header">
+	<header class=" bg-header">
 		<!-- navigatio block -->
 		<div class="section-nav">
 			<div class="navigation">
-				<div class="logo"></div>
+				<div class="logo">Gustoso</div>
 
 				<ul class="nav">
-					<li><a href="#">Welcome</a></li>
-					<li>~</li>
-					<li><a href="#">Menu</a></li>
-					<li>~</li>
-					<li><a href="#">reservations</a></li>
-					<li>~</li>
-					<li><a href="#">news</a></li>
-					<li>~</li>
-					<li><a href="#">contact</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Welcome</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">reservations</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">news</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">contact</a></li>
 				</ul>
-					<div class="social">
-						<a href="#" class="fa fa-twitter" aria-hidden="true"></a>
-						<a href="#" class="fa fa-facebook" aria-hidden="true"></a>
-						<a href="#" class="fa fa-instagram" aria-hidden="true"></a>
-					</div>	
-				</div>	
+
+				<div class="social">
+					<a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+					<a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+					<a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+				</div>
+
+			</div>	
 		</div>
 		<!-- //navigation block -->
-	<div class="section-header">
-	 	<div class="section-header__title">Pastry with love</div> 
-	 	<div class="line-curve-dashed">
-	 		<img src="images/header-img/dashed-line.png" alt="line">
-	 	</div>
-		<div class="section-header__slogan">
-			 	We’re bringing you fresh ingredients every<br> day in ways you can’t resist.
-		</div>
-		<a class="button" href="#menu">our menu</a>
-		<div class="section-header-bottom__button-bread">
-	    <img class="vector" src="images/header-img/vector.png" alt="">
-			<div class="section-header-bottom-img">
-				<img src="images/header-img/bread.png" alt="Bread picture">
+		<div class="section-header">
+		 	<h1 class="section-header__title">Pastry with love</h1> 
+			<h4 class="section-header__slogan">
+				 	We’re bringing you fresh ingredients every<br> day in ways you can’t resist.
+			</h4>
+			<div class="section-header__button">
+				<a class="button" href="#menu">our menu</a>
 			</div>
+		</div>	
+		<div class="section-header-bottom__button-bread">
+	   <img src="images/header-img/button-bread.png" alt="Bread image">
 		</div>
-	</div>
-</header>
+		
+	</header>
 <!-- //Header section -->
 
-<!-- Section art -->
-<div class="section-art">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-lg-6">
-				<div class="section-art__title">Art of cakes</div>
-				<div class="section-art_slogan">
-					we create delicious memories
-				</div>
-				<div class="section-art__text">
-					Quisque rutrum. Aenean imperdiet.
-				  Etiam ultricies nisi vel augue.
-				  Curabitur ullamcorper ultricies nisi. 
-				  Nam eget dui. Etiam rhoncus. Maecenas tempus,
-				  tellus eget condimentum rhoncus, sem quam semper 
-				  libero, sit amet adipiscing sem neque sed.
-				</div>
-				<div class="section-art_subtitle">Chef Cook</div>
-				<div class="chef-cook">
-					<div class="chef-cook__part-1">
-						 <p>Benito</p> 
-						 <img  class="chef-photo" src="images/section-art/chef-cook-img.jpg">
-						 <p>Gaspare</p>
+	<!-- Section art -->
+	<div class="section-art">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-lg-6">
+					<div class="section-art__description">
+						<h2 class="section-art__title">Art of cakes</h2>
+						<h4 class="section-art_slogan">
+							we create delicious memories
+						</h4>
+						<p class="section-art__text">
+							Quisque rutrum. Aenean imperdiet.
+						  Etiam ultricies nisi vel augue.
+						  Curabitur ullamcorper ultricies nisi. 
+						  Nam eget dui. Etiam rhoncus. Maecenas tempus,
+						  tellus eget condimentum rhoncus, sem quam semper 
+						  libero, sit amet adipiscing sem neque sed.
+						</p>
+						<h3 class="section-art_subtitle">Chef Cook</h3>
+						<div class="chef-cook">
+							<div class="chef-cook__part-1">
+								 <div class="chef-name">Benito</div> 
+								 <img  class="chef-photo" src="images/section-art/chef-cook.jpg">
+								 <div class="chef-name">Gaspare</div>
+							</div>
+							<div class="chef-cook__part-2">
+								<!-- <div class="quote-left">,,</div> -->
+					 		<div class="quote">Unique creations for unique occasions.</div>
+								<!-- <div class="quote-right">,,</div> -->
+							</div>
+						</div>
 					</div>
-					<div class="chef-cook__part-2">
-						<div class="quote-left">,,</div>
-			 				<img src="images/section-art/unique-creation.png">
-						<div class="quote-right">,,</div>
-					</div>
-			</div>
-
-			</div>
+				</div>
 
 				<div class="col-xs-12 col-lg-6">
 					<div class="add-upper">
 					<div class="add-upper__slogan">tastes so good!</div> 
 					 <img class="add-upper__img" src="images/section-art/Vektor-Smartobjekt-right.png" alt="">
-					</div>	 
-						 <div class="row">
+					</div>
 
-							<div class="col-xs-6 col-lg-6">
-								<div class="photo-art-rectangle">
-									<img class="photo-art" src="images/section-art/img-cake1.jpg" alt="Cake">
-									<div class="rectangle"></div>
-								</div>
-							</div>
-
-							<div class="col-xs-6 col-lg-6">
-								<div class="photo-art-rectangle">
-									<img class="photo-art" src="images/section-art/img-cake2.jpg" alt="Cake">
-									<div class="rectangle"></div>
-								</div>
+					<div class="row">
+						<div class="col-xs-6 col-lg-6">
+							<div class="photo-art-rectangle">
+								<img class="photo-art" src="images/section-art/img-cake1.jpg" alt="Cake">
+								<div class="rectangle"></div>
 							</div>
 						</div>
-						<div class="div-crutch"></div>
-							<div class="row">
+						<div class="col-xs-6 col-lg-6">
+							<div class="photo-art-rectangle">
+								<img class="photo-art" src="images/section-art/img-cake2.jpg" alt="Cake">
+								<div class="rectangle"></div>
+							</div>
+						</div>
+					</div>
 
-								<div class="col-xs-6 col-lg-6">
-									<div class="photo-art-rectangle">
-										<img class="photo-art" src="images/section-art/img-cake3.jpg" alt="Cake">
-									  <div class="rectangle"></div>
-									</div>
-								</div>
+					<div class="div-crutch"></div>
 
-								<div class="col-xs-6 col-lg-6">
-									<div class="photo-art-rectangle">
-										<img class="photo-art" src="images/section-art/img-cake4.jpg" alt="Cake">
-									 	<div class="rectangle"></div>
-									</div>
-								</div>
+					<div class="row">
+						<div class="col-xs-6 col-lg-6">
+							<div class="photo-art-rectangle">
+								<img class="photo-art" src="images/section-art/img-cake3.jpg" alt="Cake">
+							  <div class="rectangle"></div>
+							</div>
+						</div>
+
+						<div class="col-xs-6 col-lg-6">
+							<div class="photo-art-rectangle">
+								<img class="photo-art" src="images/section-art/img-cake4.jpg" alt="Cake">
+							 	<div class="rectangle"></div>
+							</div>
+						</div>
+					</div>
 
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 <!-- //Section art -->
 
 <!-- Section tasty -->	
-<div class="section-tasty">
-
-		
-						<div class="widget-bg">
-	
-							<div class="widget-text-bg">
-
-								<div class="ready-tips">
-									<p class="line-1" >ready in</p>
-									<p class="line-2">40</p>
-									<p class="line-3">mins</p>
-								</div>
-
-						  	<div class="widget-text">
-						  		<div class="circle"></div>
-									<h2 class="widget-text__title">
-										Tasty pancakes
-									</h2>
-									<div class="widget-text__slogan">
-										season favourite
-									</div>
-									<div class="widget-text__content">
-										<p>
-											Maecenas nec odio et ante tincidunt tempus.
-									  	Donec vitae sapien ut libero venenatis faucibus.
-									  	Nullam quis ante. Etiam sit amet orci eget eros faucibus.
-										</p>
-								  </div>
-								</div>
-					        <div  id="carousel" class="img-circle-block">
-					        	<img src="images/section-tasty/interface - arrow left.png">
-					        	<img src="images/section-tasty/img-circle3.jpg" alt="Circle image">
-					        	<img src="images/section-tasty/img-circle2.jpg" alt="Circle image">
-										<img src="images/section-tasty/img-circle1.jpg" alt="Circle image">
-					        	<img src="images/section-tasty/interface - arrow right.png" alt="">
-					        </div>
-							
-					 </div> 
-
-				</div>
+	<div class="section-tasty">
+		<div class="section-tasty__widget">
+			<div class="star-box-column">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
 			</div>
+			<div class="widget-text-bg">
+				
+				<div class="ready-tips">
+					<p class="ready-tips__line-1">ready in</p>
+					<p class="ready-tips__line-2">40</p>
+					<p class="ready-tips__line-3">mins</p>
+				</div>
+
+		  	<div class="widget-text">
+					<h2 class="widget-text__title">
+						Tasty pancakes
+					</h2>
+					<h4 class="widget-text__slogan">
+						season favourite
+					</h4>
+					<div class="widget-text__content">
+						<p>
+							Maecenas nec odio et ante tincidunt tempus.
+					  	Donec vitae sapien ut libero venenatis faucibus.
+					  	Nullam quis ante. Etiam sit amet orci eget eros faucibus.
+						</p>
+				  </div>
+				  <div class="star-box-row">
+				  	<i class="fa fa-star"></i>
+				  	<i class="fa fa-star"></i>
+				  	<i class="fa fa-star"></i>
+				  	<i class="fa fa-star"></i>
+				  	<i class="fa fa-star"></i>
+				  </div>
+				
+	        <div  id="carousel" class="slide-block">
+	        	<img src="images/section-tasty/interface - arrow left.png">
+	        	<img src="images/section-tasty/clide-img1.jpg" alt="Circle image">
+	        	<img src="images/section-tasty/clide-img2.jpg" alt="Circle image">
+						<img src="images/section-tasty/clide-img3.jpg" alt="Circle image">
+	        	<img src="images/section-tasty/interface - arrow right.png" alt="">
+	      	</div> 
+        </div>
+							
+			</div> 
+		</div>
+	</div>
 <!-- //Section tasty -->
 
-<!-- Section braekfast -->
-<div id="menu" class="section-breakfast">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-lg-6">
+	<!-- Section braekfast -->
+	<div id="menu" class="section-breakfast">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-lg-6">
 
-				<div class="menu-left">
-					<h2>Breakfast</h2> 
-					<p class="alegreya">7am Breakfast? we’re open!</p>
+					<div class="menu">
+						<h2 class="menu__title">Breakfast</h2> 
+						<p class="menu__slogan">7am Breakfast? we’re open!</p>
 
-					<h3>Full breakfast</h3>
-					<p class="proxima-nova">Duis ut tortor, et risus, vulputate pretium</p>
-					<p class="alegreya-price">$ 12.49</p>
-
-					<h3>Toast & Jam</h3>
-					<p class="proxima-nova">Suspendisse, tempus, nterdum</p>
-					<p class="alegreya-price">$4.90</p>
-	 
-					<h3>Muffins</h3>
-					<p class="proxima-nova">Fusce eget dui sodales est</p>
-					<p class="alegreya-price">$3.95</p>
-				 
-				</div>
-
-			</div>
-			<div class="col-xs-12 col-lg-6">
-				
-				<div class="menu-right">
-					<div class="menu-right__head">
-						EST.
-						1893
+						<h3 class="menu__subtitle">Full breakfast</h3>
+						<p class="menu__description">Duis ut tortor, et risus, vulputate pretium</p>
+						<div class="menu__price">$ 12.49</div>
+s
+						<h3 class="menu__subtitle">Toast & Jam</h3>
+						<p class="menu__description">Suspendisse, tempus, nterdum</p>
+						<div class="menu__price">$4.90</div>
+		 
+						<h3 class="menu__subtitle">Muffins</h3>
+						<p class="menu__description">Fusce eget dui sodales est</p>
+						<div class="menu__price">$3.95</div>
+					 
 					</div>
-					<div class="line"></div>
-					<div class="menu-right__title">	Your morning<br>
-						 Escape with Flair</div>
-					<div class="menu-right__description">
-						Donec vitae sapien ut libero venenatis faucibus. 
-						Nullam quis ante. Etiam sit amet orci eget eros
-	 					faucibus tincidunt. Duis leo.
-					</div>
-					<a class="button" href="#">read</a>
-				</div>
 
+				</div>
+				<div class="col-xs-12 col-lg-6">
+					
+					<div class="note">
+						<div class="note__head">
+
+							<div class="note__head-abbr">EST.</div>
+							<div class="note__head-year">1893</div>
+					
+							<img class="note__head-line"src="images/section-breakfast/head-line.png" alt="">
+						</div>
+						
+						<div class="note-text">
+							<div class="note__title">	Your morning<br>
+								 Escape with Flair</div>
+							<div class="note__theme">
+								Donec vitae sapien ut libero venenatis faucibus. 
+								Nullam quis ante. Etiam sit amet orci eget eros
+			 					faucibus tincidunt. Duis leo.
+							</div>
+						</div>
+						<div class="note__button">
+							<a href="#">read</a>
+						</div>
+					</div>
+
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<!-- //Section breakfast -->
+	<!-- //Section breakfast -->
 
 <!-- Section sandwitch -->
-<div class="section-sandwitch">
-	<h2 class="section-sandwitch__title">The Jibarito sandwich</h2>
-	 <h4 class="section-sandwitch__slogan">the best sandwich you’ve ever tasted!</h4>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3">
+	<div class="section-sandwitch">
+		<h2 class="section-sandwitch__title">The Jibarito sandwich</h2>
+		 <h4 class="section-sandwitch__slogan">the best sandwich you’ve ever tasted!</h4>
+		<div class="container">
+			<div class="row">
+				<div class=" col-sm-12 col-lg-3">
 
-				<div class="section-sandwitch__description">
-					<img src="images/section-sandwitch/corn.jpg" alt="Corn">
-					<div class="section-sandwitch__description__title">Class aptent</div> 
-				 	 	<div class="section-sandwitch__description__text">
-					 	 	Quot alienum persecuti ut eam, nam ad 
-							atqui primis nusquam.
+					<div class="section-sandwitch__ingredients">
+						<img src="images/section-sandwitch/corn.jpg" alt="Corn">
+						<div class="section-sandwitch__ingredients-title">Class aptent</div> 
+					 	 	<div class="section-sandwitch__ingredients-text">
+						 	 	Quot alienum persecuti ut eam, nam ad 
+								atqui primis nusquam.
+							</div>
+					</div>
+
+					<div class="section-sandwitch__ingredients">
+	       		<img src="images/section-sandwitch/eggs.jpg" alt="Eggs">
+						<div class="section-sandwitch__ingredients-title">
+							Nulla eget
+						</div>
+						<div class="section-sandwitch__ingredients-text">
+							Nullam dictum felis eu pede mollis 
+							pretium Integer tincidunt.
+						</div>
+					</div>
+
+					<div class="section-sandwitch__ingredients">
+						<img src="images/section-sandwitch/cheese.jpg" alt="Cheese">
+						<div class="section-sandwitch__ingredients-title">
+							Sed nibh purus
+						</div>
+						<div class="section-sandwitch__ingredients-text">
+						 	Aenean eleifend tellus leo ligula, 
+							porttitor eu, consequat vitae.
 						</div>
 				</div>
 
-				<div class="section-sandwitch__description">
-       		<img src="images/section-sandwitch/eggs.jpg" alt="Eggs">
-					<div class="section-sandwitch__description__title">
-						Nulla eget
-					</div>
-					<div class="section-sandwitch__description__text">
-						Nullam dictum felis eu pede mollis 
-						pretium Integer tincidunt.
+			</div>
+				<div class="col-sm-12 col-lg-9">
+	        <div class="section-sandwitch__cooking-time">
+						<div class="timing-block">			
+		        	<div class="prep">
+			        	<div class="kind">prep</div> 
+			        	<div class="amount">15</div>
+			        	<div class="unit">mins</div>	  
+		        	</div>
+		        	<div class="cook">
+			        	<div class="kind">cook</div>
+			        	<div class="amount">35</div>
+			        	<div class="unit">mins</div>
+		        	</div>
+			        <div class="readyin">
+			        	<div class="kind">ready in</div>
+			        	<div class="amount">50</div>
+			        	<div class="unit">mins</div>
+			        </div>	
+		        </div>
+				
+						<a class="section-sandwitch__button" href="#">full recipe</a> 
 					</div>
 				</div>
 
-				<div class="section-sandwitch__description">
-					<img src="images/section-sandwitch/cheese.jpg" alt="Cheese">
-					<div class="section-sandwitch__description__title">
-						Sed nibh purus
-					</div>
-					<div class="section-sandwitch__description__text">
-					 	Aenean eleifend tellus leo ligula, 
-						porttitor eu, consequat vitae.
-					</div>
-			</div>
-
+				</div>
 		</div>
-			<div class="col-lg-9">
-        <div class="section-sandwitch-cooking-time">
-					<div class="timing-block">			
-	        	<div class="prep">
-		        	<div class="line-1">prep</div> 
-		        	<div class="line-2">15</div>
-		        	<div class="line-3">mins</div>	  
-	        	</div>
-	        	<div class="cook">
-		        	<div class="line-1">cook</div>
-		        	<div class="line-2">35</div>
-		        	<div class="line-3">mins</div>
-	        	</div>
-		        <div class="readyin">
-		        	<div class="line-1">ready in</div>
-		        	<div class="line-2">50</div>
-		        	<div class="line-3">mins</div>
-		        </div>	
-	        </div>
-			
-					<a class="section-sandwitch-button" href="#">full recipe</a> 
-				</div>
-			</div>
-
-			</div>
 	</div>
-</div>
-<!-- //Section sandwitch -->
+	<!-- //Section sandwitch -->
 
 <!-- Section footer -->
-<footer class="footer-bottom">
-
-	<ul class="footer-nav footer-nav-left">
-		<li><a href="#">our menu</a></li>
-		<li>~</li>
-		<li><a href="#">gallery</a></li>
-		<li>~</li>
-		<li><a href="#">culture</a></li>
-	</ul>
-	<div class="footer-logo footer-nav-right"></div>
- <ul class="footer-nav">
- 	<li><a href="#">events</a></li>
- 	<li>~</li>
- 	<li><a href="#">catering</a></li>
- 	<li>~</li>
- 	<li><a href="#">visit us</a></li>
- </ul>
-                
-                  
-
-</footer>
-<!-- //Section footer -->
+		<footer class="footer-bottom">
+			<ul class="footer-nav footer-nav-left">
+				<li class="footer-nav__item"><a class="footer-nav__link" href="#">our menu</a></li>
+				<li class="footer-nav__item"><a class="footer-nav__link" href="#">gallery</a></li>
+				<li class="footer-nav__item"><a class="footer-nav__link" href="#">culture</a></li>
+			</ul>
+			<div class="footer-logo footer-nav-right">Gustavo</div>
+		 <ul class="footer-nav footer-nav-right">
+		 	<li class="footer-nav__item"><a class="footer-nav__link" href="#">events</a></li>
+		 	<li class="footer-nav__item"><a class="footer-nav__link" href="#">catering</a></li>
+		 	<li class="footer-nav__item"><a class="footer-nav__link" href="#">visit us</a></li>
+		 </ul>
+		</footer>
+	<!-- //Section footer -->
 
 	<!-- Scripts -->
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
-	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/main.min.js"></script>
 	
-</body>
+	</body>
 </html>
