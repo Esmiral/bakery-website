@@ -523,6 +523,11 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 @media (min-width: 992px) {
   .footer-bottom {
@@ -537,6 +542,8 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-right: 120px;
+    margin-left: 120px;
   }
 }
 .footer-logo {
@@ -546,6 +553,8 @@ template {
   color: #a09e97;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 .footer-nav {
   display: -webkit-box;
@@ -594,14 +603,6 @@ template {
   color: rgba(255, 180, 0, 0.7);
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
-}
-.footer-nav-left {
-  margin-right: 40px;
-  margin-left: 120px;
-}
-.footer-nav-right {
-  margin-left: 40px;
-  margin-right: 120px;
 }
 .section-nav {
   background-color: rgba(86, 83, 76, 0.53);
