@@ -1554,12 +1554,15 @@ p.section-art__text {
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-right: 70px;
+  margin-right: 50px;
+}
+.section-sandwitch__ingredients:last-child:last-child {
+  margin-bottom: 0;
 }
 .section-sandwitch__ingredients img {
   width: 100px;
   height: 100px;
-  margin-bottom: 23px;
+  margin-bottom: 15px;
   border-radius: 50px;
   -webkit-box-shadow: 0px 10px 10px 0 #e8e4d5;
           box-shadow: 0px 10px 10px 0 #e8e4d5;
@@ -1569,25 +1572,19 @@ p.section-art__text {
   font-weight: 700;
   letter-spacing: 0.75px;
   color: #a47d5e;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 .section-sandwitch__ingredients-text {
   font-family: 'Proxima Nova Rg';
   color: #56534c;
   font-size: 14px;
   letter-spacing: 1.4px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .section-sandwitch__cooking-time {
-  width: 842px;
-  height: 556px;
   margin-top: 84px;
   -webkit-box-shadow: 0px 10px 10px 0px #e7e3d3;
           box-shadow: 0px 10px 10px 0px #e7e3d3;
-  background-image: url("../images/section-sandwitch/img-bg-sandwitch.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
   position: relative;
   margin-bottom: 180px;
 }
@@ -1664,6 +1661,6 @@ p.section-art__text {
 }
 .prep,
 .cook {
-  border-bottom: 1px solid #dc8350;
+  border-bottom: 1px solid rgba(220, 131, 80, 0.5);
   opacity: 0.8;
 }
