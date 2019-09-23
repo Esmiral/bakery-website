@@ -524,7 +524,7 @@ template {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .footer-bottom {
     display: -webkit-box;
     display: -ms-flexbox;
