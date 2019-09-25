@@ -11,11 +11,12 @@ practice
      Мобильная навигация
 
 
-[Онлайн демо](https://github.com/Esmiral/bakery-website)
+[Онлайн демо](https://github.com/Esmiral/bakery-website.git)
 
 Тестировать локально
 
-git clone https://github.com/Esmiral/bakery-website
-cd apollo
+git clone https://github.com/Esmiral/bakery-website.git
+
+cd bakery-website
 
 Открыть index.html
