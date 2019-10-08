@@ -11,7 +11,7 @@ practice
      Мобильная навигация
 
 
-[Онлайн демо](https://github.com/Esmiral/bakery-website.git)
+[Онлайн демо]https://esmiral.github.io/bakery-website/)
 
 Тестировать локально
 
